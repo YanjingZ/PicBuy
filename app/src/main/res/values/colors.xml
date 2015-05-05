@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="frame">#b4b4b4</color>
+    <color name="frame_solid">#20ff6600</color>
+    <color name="frame_background">#20A4C639</color>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/shopping"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp">
+
+    <!--ImageView
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        android:id="@+id/textView"
+        android:src="@drawable/logo" /-->
+
+
+    <ImageView
+    android:layout_height="350dp"
+    android:layout_width="match_parent"
+    android:visibility="visible"
+    android:id="@+id/imageView1"
+    android:layout_weight="1"
+    android:adjustViewBounds="false"
+    android:baselineAlignBottom="false"
+    />
+
+    <ImageButton
+        android:id="@+id/btnIntend"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_action_camera"
+        android:layout_below="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"/>
+
+    <Button
+        android:text="   Search   "
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:textColor="#ffffffff"
+        android:layout_gravity="right"
+        android:textSize="11pt"
+        android:layout_alignTop="@+id/btnIntend"
+        android:layout_toRightOf="@+id/btnIntend"
+        android:layout_toEndOf="@+id/btnIntend"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
+
+
+</RelativeLayout>

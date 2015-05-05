@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="257dp"
+        android:layout_height="300dp"
+        android:id="@+id/image"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/RestaurantName"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/Address"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05" />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+        <Button
+            android:id="@+id/order"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="Order"
+            android:background="#A4C639"
+            android:textColor="#ffffffff"
+            android:layout_marginRight="10dip"
+            android:layout_marginLeft="15dip"
+            android:textSize="11pt" />
+        <Button
+            android:id="@+id/call"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:background="#A4C639"
+            android:textColor="#ffffffff"
+            android:layout_toRightOf="@+id/order"
+            android:layout_marginRight="10dip"
+            android:textSize="11pt" />
+        <Button
+            android:id="@+id/direction"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="Direction"
+            android:background="#A4C639"
+            android:textColor="#ffffffff"
+            android:layout_toRightOf="@+id/call"
+            android:textSize="11pt" />
+    </RelativeLayout>
+
+</LinearLayout>
