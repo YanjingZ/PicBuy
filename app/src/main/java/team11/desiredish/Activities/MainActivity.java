@@ -103,26 +103,10 @@ public class MainActivity extends FragmentActivity implements TabHost.OnTabChang
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle presses on the action bar items
         switch (item.getItemId()) {
-            case R.id.action_fllow:
-                followFriend();
-                return true;
-            case R.id.action_logout:
-                Logout();
-                return true;
+            
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }
-    public void followFriend(){
-        Intent intent = new Intent(this, FollowFriendActivity.class);
-        intent.putExtra(EXTRA_MESSAGE, UserID);
-        startActivity(intent);
-    }
-    public void Logout() {
-        finish();
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
-
     }
 
     protected void onSaveInstanceState(Bundle outState) {
